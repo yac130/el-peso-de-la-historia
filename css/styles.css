@@ -1,0 +1,380 @@
+* {
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: url(../images/grey.png) repeat;
+}
+
+@font-face {
+    font-family: 'actobook';
+    src: url('../fonts/acto-book-webfont.woff2') format('woff2'),
+         url('../fonts/acto-book-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobold';
+    src: url('../fonts/acto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/acto-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'actoblack';
+    src: url('../fonts/acto-black-webfont.woff2') format('woff2'),
+         url('../fonts/acto-black-webfont.woff') format('woff');
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.mobile {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 980px;
+    padding-top: 20px;
+}
+
+.header-comercio {
+    background: #000;
+    padding: 22px 0 14px;
+}
+    .ctn-header-comercio {
+        margin: 0 auto;
+        max-width: 990px;
+        text-align: left;
+    }
+        .ctn-header-comercio a {
+            display: inline-block;
+            text-indent: -9999px;
+        }
+            a.logo-comercio {
+                background: url('../images/logo.png') no-repeat 0 0;
+                background-size: 100%;
+                height: 24px;
+                width: 154px;
+            }
+        #social {
+            float: right;
+            margin-right: 0px;
+        }
+            #social ul {
+                display: inline-block;
+                margin: -3px auto 0;
+                padding: 0;
+                vertical-align: middle;
+            }
+                #social ul li {
+                    display: inline-block;
+                    margin: 0 1px;
+                    vertical-align: middle;
+                }
+                    #social ul li a {
+                        height: 32px;
+                        width: 32px;
+                    }
+                        #social ul li a.facebook {
+                            background: url('../images/redes.png') no-repeat -17px -9px;
+                        }
+
+                        #social ul li a.tw {
+                            background: url('../images/redes.png') no-repeat -56px -9px;
+                        }
+
+                        #social ul li a.gp {
+                            background: url('../images/redes.png') no-repeat -96px -9px;
+                        }
+
+                        #social ul li:hover {
+                            opacity: 0.5;
+                        }
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 100px;
+}
+
+#characters {
+    margin: 60px 0;
+    list-style: none;
+    text-align: center;
+}
+
+#characters li {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+#characters li img {
+    width: 136px;
+}
+
+#characters .active {
+    font-weight: bold;
+}
+
+#bubble {
+    background: #fff;
+    border-radius: 25px;
+    border: 2px solid #c1c1c1;
+    margin: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#bubble p {
+    font: 16px/20px 'actobook';
+    margin: 35px 0;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.left {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    width: 70%;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.left.half,
+.right.half {
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+#back.center {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#play {
+    background-position: right;
+    background: url('../images/play.png') no-repeat;
+    border-radius: 10px;
+    color: transparent;
+    display: inline-block;
+    font:  30px/45px 'actobold';
+    padding-left: 20px;
+    padding: 10px 0;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 161px;
+}
+
+#back {
+    background-position: left;
+    background: url('../images/back.png') no-repeat;
+    border-radius: 10px;
+    color: #e2ca14;
+    display: inline-block;
+    font:  30px/41px 'actobold';
+    padding-right: 20px;
+    padding: 10px 0;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: #888 1px 1px;
+    text-transform: uppercase;
+    width: 170px;
+}
+
+#ranking {
+    background-position: right;
+    background: url('../images/ranking.png') no-repeat;
+    border-radius: 10px;
+    color: #e2ca14;
+    display: inline-block;
+    font:  30px/41px 'actobold';
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding: 10px 0;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: #888 1px 1px;
+    text-transform: uppercase;
+    width: 190px;
+}
+
+.tab {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tab table {
+    margin: 0 auto;
+}
+
+.tab table th {
+    font-weight: bold;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 999999;
+}
+    #loading p {
+        color: #FFF;
+        margin: 0;
+        padding-top: 200px;
+        font-size: 28px;
+    }
+
+@media only screen and (max-width: 700px) {
+    .mobile {
+        display: block;
+    }
+    .header-comercio {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container {
+        overflow: hidden;
+        padding-bottom: 50px;
+        width: 300px;
+    }
+    p {
+        padding: 0 20px;
+    }
+    #bubble {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #characters {
+        margin: 0;
+    }
+    #characters img {
+        /*        width: 80%;*/
+    }
+    #characters li {
+        margin: 30px 0;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    #play {
+        margin-bottom: 20px;
+    }
+    .box-main-header {
+        height: 280px !important;
+    }
+        .titulo-juego{
+            background-size: 100% !important;
+            height: 250px !important;
+            width: 100% !important;
+        }
+    img.linea-titulo{
+
+    }
+    h2.bajada{
+        font: 3em/1em 'actobold' !important;
+    }
+    #bubble p {
+        font: 18px/26px 'actobook';
+    }
+}
+
+
+
+
+#instructions{
+    font: 19px/26px 'actobook';
+    margin: 40px auto 10px;
+}
+.box-main-instrucciones{
+    margin: 0 auto;
+    max-width: 700px;
+}
+    p.titulo-instrucciones{
+        font: 19px/24px 'actobold';
+        font-weight: bold;
+        padding: 0 40px;
+        text-align: left;
+    }
+    p.punto{
+        font: 17px/20px 'actobook';
+        padding: 0 40px;
+        text-align: left;    
+    }
+        p.punto span{
+            font-weight: bold;
+        }
+
+.titulo-juego{
+    background: url(../images/titulo-juego-3.png?321) no-repeat;
+    color: #ff4200;
+    font: 70px/68px 'actoblack';
+    height: 439px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    width: 738px;
+}
+.linea-titulo{
+    display: block;
+    margin: 0 auto;
+}
+h2.bajada{
+    color: #ff5a00;
+    font: 60px/62px 'actobold';
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul#characters li{
+    cursor: pointer;
+    font: 16px/18px 'actobold';
+}
+
+.titulo-elige{
+    font: 34px/40px 'actobook';
+}
+    .titulo-elige span{
+        font-family: 'actoblack';
+    }
+
+.box-main-header{
+    /*background: url(../images/bg-ladrillos.jpg?452) repeat-x;*/
+    /*height: 340px;*/
+    margin: 20px auto;
+    width: 100%;
+}
